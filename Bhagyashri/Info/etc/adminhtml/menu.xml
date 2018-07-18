@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add id="Bhagyashri_Info::info" title="Manage Info" module="Bhagyashri_Info" sortOrder="10" action="info/info/index" resource="Bhagyashri_Info::info" />
+    </menu>
+</config>

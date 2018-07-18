@@ -1,0 +1,15 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="student_info_grid_data_source" xsi:type="string">Bhagyashri\Info\Model\ResourceModel\Info\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Bhagyashri\Info\Model\ResourceModel\Info\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">student_info</argument>
+            <argument name="resourceModel" xsi:type="string">Bhagyashri\Info\Model\ResourceModel\Info</argument>
+        </arguments>
+    </virtualType>
+</config>

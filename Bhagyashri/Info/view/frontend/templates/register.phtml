@@ -1,0 +1,46 @@
+<h1>Registration page</h1>
+
+<form action="<?php echo $block->getFormAction() ?>" method="post">
+
+
+   <!--  <input name="firstname" type="text">
+    <input name="lastname" type="text">
+    <input name="phone" type="text">
+    <input name="age" type="int">
+    <input type="submit" value="Save"> -->
+
+
+
+<div class="field subject required">
+	<div class="row">
+             <label class="label" for="firstname"><span><?php /* @escapeNotVerified */ echo __('Firstname') ?></span></label>
+             <div class="control col-md-3">
+                  <input name="firstname" id="firstname" title="<?php /* @escapeNotVerified */ echo __('Firstname') ?>" value="" class="input-text" type="text" data-validate="{required:true}"/>
+             </div>
+     </div>
+     <div class="row">
+             <label class="label" for="lastname"><span><?php /* @escapeNotVerified */ echo __('Lastname') ?></span></label>
+             <div class="control col-md-3">
+                  <input name="lastname" id="lastname" title="<?php /* @escapeNotVerified */ echo __('Lastname') ?>" value="" class="input-text" type="text" data-validate="{required:true}"/>
+             </div>
+     </div>
+     <div class="row">
+             <label class="label" for="phone"><span><?php /* @escapeNotVerified */ echo __('Phone') ?></span></label>
+             <div class="control col-md-3">
+                  <input name="phone" id="phone" title="<?php /* @escapeNotVerified */ echo __('Phone') ?>" value="" class="input-number" type="number" data-validate="{required:true}"/>
+             </div>
+     </div>
+     <div class="row">
+             <label class="label" for="age"><span><?php /* @escapeNotVerified */ echo __('Age') ?></span></label>
+             <div class="control col-md-3">
+                  <input name="age" id="age" title="<?php /* @escapeNotVerified */ echo __('Age') ?>" value="" class="input-number" type="text" data-validate="{required:true}"/>
+             </div>
+     </div>
+
+    <div class="actions-toolbar">
+	        <div class="primary">
+     			<button type="submit" title="Submit" class="action submit primary">Save</button>
+     </div>
+    	</div>
+</div>
+</form>
